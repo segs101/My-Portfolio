@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - BS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Nata+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="name"><strong>BS.</strong></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolios</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <!-- From Uiverse.io by Voxybuns --> 
+        <button>
+          <a href="https://wa.me/2347040152120"><span class="button_top"> Hire ME</span></a>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Hey, I’m Balogun — Fullstack Python Developer</h1>
+      <p>➤ Web Development ➤ Web Scraping & Automation ➤ Data Processing</p>
+      <div class="buttons">
+        <p>Want to discuss?</p>
+        <a href="https://wa.me/2347040152120"><button class="btn-yellow">Let’s Talk.</button></a>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="/Untitled.jpg" alt="Profile">
+    </div>
+  </section>
+
+  <section class="container" id="services">
+    <h2>Services.</h2>
+    <p>Here are the services i am providing to you.</p>
+    <div class="services-grid">
+      <div class="card"><img src="/world-wide-web.png" alt="">Web Development</div>
+      <div class="card"><img src="/web-scraper.png" alt="">Web Scraping & Automation</div>
+      <!-- <div class="card">Data Processing</div> -->
+      <div class="card"><img src="/script.png" alt="">Python Scripting</div>
+      <div class="card"><img src="/cloud-api.png" alt="">API Integration</div>
+      <div class="card"><img src="/engineering.png" alt="">Custom Tools</div>
+    </div>
+    <br>
+    <!-- <button class="btn-yellow">View All</button> -->
+  </section>
+
+  <section class="container" id="portfolio">
+    <h2>Portfolios.</h2>
+    <p>Click on the cards to see my portfolios of related category.</p>
+
+    <div class="portfolio-grid">
+      <!-- Card 1 -->
+      <div class="card-port">
+        <div class="image">
+          <img src="/Screenshot 2025-08-06 205353.png" alt="Budget Tracker">
+        </div>
+        <div class="content">
+          <a href="#">
+            <span class="title">Jumia Price Scraper Tool</span>
+          </a>
+          <p class="desc">
+            A Python automation tool that scrapes product prices and details from Jumia, exports to CSV/Excel.
+          </p>
+          <a class="action" href="#">
+            View →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-port">
+        <div class="image">
+          <img src="/Screenshot 2025-07-30 130858.png" alt="Budget Tracker">
+        </div>
+        <div class="content">
+          <a href="#">
+            <span class="title">Local Business Portfolio Website</span>
+          </a>
+          <p class="desc">
+            Minimal, responsive portfolio websites built for small business owners to showcase their work.
+          </p>
+          <a class="action" href="#">
+            View →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-port">
+        <div class="image">
+          <img src="/Screenshot 2025-08-05 204059.png" alt="Budget Tracker">
+        </div>
+        <div class="content">
+          <a href="https://budget-trackker.streamlit.app/">
+            <span class="title">Budget Tracker</span>
+          </a>
+          <p class="desc">
+            Automated data scraping from public directories, saving structured results in JSON format.
+          </p>
+          <a class="action" href="https://budget-trackker.streamlit.app/">
+            View →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card-port">
+        <div class="image">
+          <img src="/Screenshot 2025-08-05 204059.png" alt="Budget Tracker">
+        </div>
+        <div class="content">
+          <a href="#">
+            <span class="title">Custom Python Scripts</span>
+          </a>
+          <p class="desc">
+            Bespoke automation scripts to handle repetitive tasks for businesses and individuals.
+          </p>
+          <a class="action" href="#">
+            View →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section class="container" id="contact">
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to bring your business online? Let’s talk!</p>
+    <div>
+      <form class="form" onsubmit="sendWhatsAppMessage(event)">
+        <textarea 
+          class="form-control" 
+          rows="1" 
+          placeholder="Send us a message direct..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- WhatsApp Script -->
+<script>
+  function sendWhatsAppMessage(event) {
+    event.preventDefault(); // stop form from refreshing page
+    const textarea = event.target.querySelector('textarea');
+    const message = encodeURIComponent(textarea.value.trim());
+
+    if (message) {
+      window.open(`https://wa.me/2347040152120?text=${message}`, '_blank');
+    } else {
+      alert("Please type a message before sending.");
+    }
+  }
+</script>
+
+  <section class="container" id="testimonials">
+    <h2>Testimonials</h2>
+    <p>Here are some testimonials from our clients.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>“This young man - is a great developer. Works very hard and listens to clients.”</p>
+        <strong>– Rashidat Ahmed</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Very hard worked. Listens and understands client needs. Well done.”</p>
+        <strong>– Fanny Oshoke</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Kazim is professional and delivers quality graphics. Highly recommend!”</p>
+        <strong>– Divine Okafor</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Balogun is professional and delivers quality product. Highly recommend!”</p>
+        <strong>– Balogun Olasupo</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <h2>BS.</h2>
+      <div class="socials">
+          <p><i class="fab fa-whatsapp"></i><a href="">+2347040152120</a></p> 
+          <p><i class="fab fa-instagram"></i><a href="">Balogundev</a></p> 
+          <p><i class="fab fa-facebook"></i><a href="">Balogundev</a></p>
+          <p><i class="fab fa-linkedin"></i><a href="">Balogundev</a></p>
+          <p><i class="fas fa-envelope"></i><a href="">Bsegun618@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/bdb8ba5466.js" crossorigin="anonymous"></script>
+</body>
+</html>
