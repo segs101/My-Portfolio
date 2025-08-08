@@ -90,12 +90,12 @@
       border: 5px solid #00ADB5;
     }   
     
-    #services h2, #portfolio h2, #testimonials h2, #contact h2 {
+    #services h2, #portfolio h2, #testimonials h2, #contact h2, #pricing h2 {
       font-family: "Mozilla Headline", sans-serif;
       font-size: 30px;
       margin-bottom: 10px;
     }
-    #services p, #portfolio p, #testimonials p, #contact p {
+    #services p, #portfolio p, #testimonials p, #contact p ,#pricing p {
         padding: 5px 0;
       font-family: "Ubuntu", sans-serif;
     }
@@ -107,7 +107,7 @@
         background-color: #f0f0f0;
         /* padding: 40px 20px; */
     }
-    .services-grid, .portfolio-grid,.testimonials-grid {
+    .services-grid, .portfolio-grid,.testimonials-grid, .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
@@ -238,7 +238,47 @@
       border-radius: 5px;
       font-family: "Mozilla Headline", sans-serif;
     }
+    /* ===============Pricing============  */
+    .pricing-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .pricing-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    font-family: "Mozilla Headline", sans-serif;
+    }
+    .pricing-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      font-family: "Ubuntu", sans-serif;
+    }
+    .pricing-card a{
+      text-decoration: none;
+      color: #222831;
+      font-weight: bold;
+      font-family: "Mozilla Headline", sans-serif;
+      border: 1px solid #222831;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #222831;
+    }
+    .pricing-card ul{
+      margin-bottom: 10px;
+    }
+    .pricing-card ul li{
+      text-align: left;
+      list-style: none;
+      
+    }
     
+
+    /* ==============Testimonials============= */
     .testimonial {
       background: #fff;
       padding: 20px;
