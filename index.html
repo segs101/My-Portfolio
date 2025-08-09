@@ -41,10 +41,10 @@
     </div>
   </section>
 
-  <!-- Font Awesome -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-<div class="infinite-scroll-container container">
+<div class="infinite-scroll-container">
   <div class="infinite-scroll-track">
     <div class="infinite-scroll-card">
       <img src="img/python.png" alt="Python">
@@ -55,23 +55,26 @@
     <div class="infinite-scroll-card">
       <img src="img/icons8-flask-50.png" alt="Python">
     </div>
-    <div class="infinite-scroll-card">
+     <div class="infinite-scroll-card">
       <img src="img/icons8-django-96.png" alt="Python">
     </div>
-    <div class="infinite-scroll-card">
+     <div class="infinite-scroll-card">
       <img src="img/icons8-html-96.png" alt="Python">
     </div>
-    <div class="infinite-scroll-card">
-      <img src="img/icons8-css-96.png" alt="Python">
-    </div>
      <div class="infinite-scroll-card">
-      <img src="img/icons8-tailwind-css-96.png" alt="Python">
+      <img src="img/icons8-css-96.png" alt="Python">
     </div>
      <div class="infinite-scroll-card">
       <img src="img/icons8-bootstrap-96.png" alt="Python">
     </div>
+     <div class="infinite-scroll-card">
+      <img src="img/icons8-tailwind-css-96.png" alt="Python">
+    </div>
   </div>
 </div>
+
+
+
   <section class="container" id="services">
     <h2>Services.</h2>
     <p>Here are the services i am providing to you.</p>
@@ -186,14 +189,14 @@
 
 
 <section id="pricing" class="container">
-  <h2>💰 Pricing Plans – Beginner Friendly</h2>
+  <h2>💰 Pricing Plans – Discounted Price</h2>
   <p>Click a package to message me directly on WhatsApp 📲</p>
 
   <div class="pricing-grid">
     <!-- Small Business Website -->
     <div class="pricing-card">
       <h3>Small Business Website</h3>
-      <p><strong>₦30,000 – ₦40,000</strong></p>
+      <p><strong>₦30,000 – ₦50,000</strong></p>
       <p>5-page site, SEO, contact forms</p>
       <a href="https://wa.me/2347040152120?text=Hi+Segun%2C+I%27m+interested+in+the+Small+Business+Website+package+%28%E2%82%A630k-%E2%82%A640k%29" >Get This Package</a>
     </div>
@@ -201,7 +204,7 @@
     <!-- Portfolio Website -->
     <div class="pricing-card">
       <h3>Portfolio Website</h3>
-      <p><strong>₦15,000 – ₦25,000</strong></p>
+      <p><strong>₦15,000 – ₦30,000</strong></p>
       <p>Personal branding, gallery, resume</p>
       <a href="https://wa.me/2347040152120?text=Hi+Segun%2C+I%27m+interested+in+the+Portfolio+Website+package+%28%E2%82%A615k-%E2%82%A625k%29" >Get This Package</a>
     </div>
@@ -241,7 +244,7 @@
     <!-- Bundle: Website + Scraping -->
     <div class="pricing-card">
       <h3>Website + Scraping</h3>
-      <p><strong>₦35,000 – ₦45,000</strong></p>
+      <p><strong>₦35,000 – ₦50,000</strong></p>
       <p>Business website + 1-month price monitoring</p>
       <a href="https://wa.me/2347040152120?text=Hi+Segun%2C+I%27m+interested+in+Website+%2B+Scraping+%28%E2%82%A635k-%E2%82%A645k%29" >Get This Package</a>
     </div>
@@ -261,7 +264,7 @@
   <div class="pricing-card">
     <h3>Google Business Listing + Map Integration</h3>
     <p>Appear on Google Search & Maps, verified and visible to customers, with your location embedded directly on your website.</p>
-    <p><strong>₦25,000 – ₦30,000</strong></p>
+    <p><strong>₦25,000 – ₦35,000</strong></p>
     <ul>
       <li>✅Profile setup & verification</li>
       <li>✅Photos, services & hours</li>
@@ -286,6 +289,24 @@
       alert("Please type a message before sending.");
     }
   }
+
+
+
+
+  const container = document.querySelector(".infinite-scroll-container");
+  const track = document.querySelector(".infinite-scroll-track");
+  const cards = Array.from(track.children);
+
+  // Duplicate content until it's at least twice the container width
+  let trackWidth = track.scrollWidth;
+  while (trackWidth < container.offsetWidth * 2) {
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      track.appendChild(clone);
+    });
+    trackWidth = track.scrollWidth;
+  }
+
 </script>
 
 
