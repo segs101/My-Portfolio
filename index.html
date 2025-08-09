@@ -42,9 +42,9 @@
   </section>
 
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<div class="infinite-scroll-container">
+
+<div class="infinite-scroll-container container">
   <div class="infinite-scroll-track">
     <div class="infinite-scroll-card">
       <img src="/img/python.png" alt="Python">
@@ -53,38 +53,25 @@
       <img src="/img/icons8-javascript-96.png" alt="Python">
     </div>
     <div class="infinite-scroll-card">
-      <img src="/img/icons8-html-96.png" alt="Python">
-    </div>
-    <div class="infinite-scroll-card">
-      <img src="/img/icons8-css-96.png" alt="Python">
-    </div>
-    <div class="infinite-scroll-card">
       <img src="/img/icons8-flask-50.png" alt="Python">
     </div>
     <div class="infinite-scroll-card">
       <img src="/img/icons8-django-96.png" alt="Python">
     </div>
-    
+    <div class="infinite-scroll-card">
+      <img src="/img/icons8-html-96.png" alt="Python">
+    </div>
+    <div class="infinite-scroll-card">
+      <img src="/img/icons8-css-96.png" alt="Python">
+    </div>
+     <div class="infinite-scroll-card">
+      <img src="/img/icons8-tailwind-css-96.png" alt="Python">
+    </div>
+     <div class="infinite-scroll-card">
+      <img src="/img/icons8-bootstrap-96.png" alt="Python">
+    </div>
   </div>
 </div>
-
-<script>
-  const container = document.querySelector(".infinite-scroll-container");
-  const track = document.querySelector(".infinite-scroll-track");
-  const cards = Array.from(track.children);
-
-  // Duplicate content until it's at least twice the container width
-  let trackWidth = track.scrollWidth;
-  while (trackWidth < container.offsetWidth * 2) {
-    cards.forEach(card => {
-      const clone = card.cloneNode(true);
-      track.appendChild(clone);
-    });
-    trackWidth = track.scrollWidth;
-  }
-</script>
-
-
   <section class="container" id="services">
     <h2>Services.</h2>
     <p>Here are the services i am providing to you.</p>
