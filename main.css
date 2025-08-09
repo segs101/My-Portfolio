@@ -176,6 +176,10 @@
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex: 1 1 300px; responsive cards */
     }
 
     .card-port a {
@@ -275,47 +279,61 @@
       font-family: "Mozilla Headline", sans-serif;
     }
     /* ===============Pricing============  */
-    .pricing-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .pricing-card h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    font-family: "Mozilla Headline", sans-serif;
-    }
-    .pricing-card p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-      font-family: "Ubuntu", sans-serif;
-    }
-    .pricing-card a{
-      text-decoration: none;
-      color: #222831;
-      font-weight: bold;
-      font-family: "Mozilla Headline", sans-serif;
-      border: 1px solid #222831;
-      padding: 5px 10px;
-      border-radius: 5px;
-      color: #fff;
-      background-color: #222831;
-    }
-    .pricing-card ul{
-      margin-bottom: 10px;
-    }
-    .pricing-card ul li{
-      text-align: left;
-      list-style: none;
-      color: #555;
-      /* margin-bottom: 20px; */
-      font-family: "Ubuntu", sans-serif;
-      
-    }
-    
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 300px; /* responsive cards */
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+.pricing-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.pricing-card a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Mozilla Headline", sans-serif;
+  border: 1px solid #222831;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #222831;
+  align-self: center; /* keeps button centered */
+  margin-top: auto; /* pushes button to bottom */
+}
+
+.pricing-card ul {
+  margin-bottom: 10px;
+}
+
+.pricing-card ul li {
+  text-align: left;
+  list-style: none;
+  color: #555;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 5px;
+}
 
     /* ==============Testimonials============= */
     .testimonial {
