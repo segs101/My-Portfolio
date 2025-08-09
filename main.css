@@ -238,9 +238,7 @@
     transform: translateX(4px);
     }   
 /* ========================================================== */
-    /* .contact {
-      padding: 20px;
-    } */
+    
     .contact h2 {
       /* font-size: 36px; */
       margin-bottom: 10px;
@@ -320,7 +318,7 @@
   color: #fff;
   background-color: #222831;
   align-self: center; /* keeps button centered */
-  margin-top: auto; /* pushes button to bottom */
+  margin-top: 10px; /* pushes button to bottom */
 }
 
 .pricing-card ul {
