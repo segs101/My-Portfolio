@@ -142,6 +142,7 @@
   font-size: 19px;
 }
 
+
     .profile{
       margin-top: 10px;
     }
@@ -171,25 +172,39 @@
       margin-top: 20px;
     }
     .card {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        background: #f0f0f0;
-        background: white;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        text-align: left;
-        font-family: "Nata Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
+      display: flex;
+      flex-direction: column; /* stack icon above text for services */
+      align-items: center;
+      text-align: center;
+      background: #fff;
+      padding: 25px 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-family: "Nata Sans", sans-serif;
     }
     .card img {
-      width: 40px;
-      height: auto;
-      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+      border-radius: 12px;
     }
+    /* Card title */
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* Card description */
+.card p {
+  font-size: 0.95rem;
+  color: #6B7280;
+  line-height: 1.4rem;
+}
+
     /* From Uiverse.io by Yaya12085 */ 
     .card-port {
     max-width: 300px;
